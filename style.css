@@ -55,8 +55,8 @@ outline-offset: 2px;
 }
 
 .site-logo:active {
-  opacity: 0.6;
-  color: #fff;
+ color: rgba(222, 46, 84, 1);
+opacity: 0.6;
 }
 
 .site-logo-img {
@@ -90,17 +90,20 @@ outline-offset: 2px;
   margin: 0;
   list-style: none;
 }
-
+header .sitenav-link{
+color: #000;
+}
 .sitenav-item:not(:last-child) {
   margin-right: 32px;
 }
 
 .sitenav-link {
-  color: #222;
+  text-decoration: none;
+  color: #fff;
   display: block;
 }
 
-.sitenav-item:hover {
+.sitenav-link:hover {
   color: #de2e54;
 }
 
@@ -197,6 +200,7 @@ outline-offset: 2px;
   margin-left: auto;
   padding: 0;
   margin: 0;
+  margin-bottom: 60px;
   list-style: none;
 
 }
@@ -211,12 +215,33 @@ margin-bottom: 80px;
 }
 .services-img
 {
+  box-shadow: 0px 12px 24px -8px rgba(0, 107, 116, 0.3);
+  border-radius: 24px;
   width: 200px;
   height: 200px;
   object-fit: cover;
   margin-right: 64px;
-  border-radius: 24px;
 
+
+}
+.service-content
+{
+  width: 600px;
+
+}
+.service-content{
+  margin-top: 0;
+  margin-bottom: 24px;
+  color: #222;
+}
+.service-description
+{
+  margin: 0;
+}
+.services-action
+{
+  display: flex;
+  justify-content: center;
 }
 .site-footer
 {
