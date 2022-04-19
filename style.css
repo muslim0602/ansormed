@@ -1,7 +1,10 @@
 * {
   box-sizing: border-box;
 }
-
+html
+{
+  scroll-behavior: smooth;
+}
 body {
   font-size: 16px;
   line-height: 1.5;
@@ -121,8 +124,16 @@ color: #000;
 }
 
 .main-link:hover {
+  background-color: rgba(222, 46, 84, 0.6);
+  color: #fff;
+
+}
+header .main-link:hover{
   background-color: #fff;
   color: #de2e54;
+}
+header .main-link:active{
+  background-color: rgba(222, 46, 84, 0.6);
 }
 .main-link:active
 {
@@ -135,9 +146,14 @@ color: #000;
   background-color: rgba(222, 46, 84, 0.8);
   color: #fff;
 }
-.main-link-solid:active
+.main-link-outline
 {
-
+  background-color: transparent;
+  color: #fff;
+  border-color: #fff;
+}
+.main-link-outline:hover{
+  background-color: #de2e54;
 }
 .hero
 {
@@ -149,8 +165,9 @@ color: #000;
 }
 .hero-heading
 {
+  width: 500px;
   margin-top: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', 'Arial' sans-serif;
   font-size: 36px;
   line-height: 1.2;
   margin-bottom: 16px;
@@ -192,6 +209,14 @@ color: #000;
   line-height: 1.2;
   margin-bottom: 56px;
   color: #000;
+}
+.service-title{
+  width: 500px;
+  height: 86px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 120%;
+
 }
 .services-list
 {
@@ -243,6 +268,32 @@ margin-bottom: 80px;
   display: flex;
   justify-content: center;
 }
+.cta
+{
+  padding-top: 64px;
+  padding-bottom: 64px;
+  background-color: #0eb4c1;
+  color: #fff;
+}
+.cta-heading
+{
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 36px;
+  line-height: 1.2;
+}
+.cta-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-link-item:not(:last-child){
+  margin-right: 40px;
+}
+
 .site-footer
 {
   padding-top: 24px;
