@@ -95,7 +95,7 @@ outline-offset: 2px;
   margin-right: 32px;
 }
 
-.sitenav-item {
+.sitenav-link {
   color: #222;
   display: block;
 }
@@ -105,7 +105,7 @@ outline-offset: 2px;
 }
 
 .main-link {
-  display: block;
+  display: inline-block;
   background-color: #de2e54;
   color: #fff;
   text-decoration: none;
